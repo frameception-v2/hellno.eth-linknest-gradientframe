@@ -114,10 +114,42 @@ export default function Frame(
         paddingBottom: context?.client.safeAreaInsets?.bottom ?? 0,
         paddingLeft: context?.client.safeAreaInsets?.left ?? 0,
         paddingRight: context?.client.safeAreaInsets?.right ?? 0,
+        background: 'linear-gradient(135deg, #8A2BE2, #4B0082)',
+        minHeight: '100vh'
       }}
     >
-      <div className="w-[300px] mx-auto py-2 px-2">
-        <h1 className="text-2xl font-bold text-center mb-4">{title}</h1>
+      <div className="w-[300px] mx-auto py-8 px-4">
+        <h1 className="text-3xl font-bold text-center mb-6 text-white">LinkSphere</h1>
+        
+        <div className="space-y-4">
+          <a 
+            href="https://warpcast.com/hellno.eth" 
+            target="_blank"
+            className="block bg-purple-600/50 hover:bg-purple-600/70 text-white px-6 py-3 rounded-lg text-center transition-all"
+          >
+            🟣 Farcaster
+          </a>
+          
+          <a
+            href="https://github.com/hellnoeth"
+            target="_blank"
+            className="block bg-gray-800/50 hover:bg-gray-800/70 text-white px-6 py-3 rounded-lg text-center transition-all"
+          >
+            🐙 GitHub
+          </a>
+
+          <a
+            href="https://twitch.tv/hellnotv"
+            target="_blank"
+            className="block bg-purple-800/50 hover:bg-purple-800/70 text-white px-6 py-3 rounded-lg text-center transition-all"
+          >
+            📺 Twitch
+          </a>
+        </div>
+
+        <div className="mt-8 text-center text-white/80">
+          Built with 💜 by hellno.eth
+        </div>
       </div>
     </div>
   );
